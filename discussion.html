@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Discussion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">  
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cookie|Merienda+One|Montserrat|Permanent+Marker|Vidaloka" rel="stylesheet">
+  
+</head>
+
+<body class="background-color">
+    <!--Nav Bar -->
+  <div class="nav-container">
+        <!-- Nav medium+ -->
+        <div class="top-bar navbar" id="nav-main">
+          <div class="top-bar-left">
+            <img class="blog-logo" src="assets/img/blogme-logo.png" width="100px"> 
+          </div>
+          <div class="top-bar-right">
+               <button id="sign-out-btn" type="submit">Sign Out</button>   
+          </div>
+        </div>
+  </div>
+
+  <!-- Newsfeed -->
+  <div class="cell medium-auto">
+    <div class="grid-x grid-padding-x">
+   <!-- Newsfeed stream-->
+        <div class="news-postcard-stream cell large-4 large-offset-2 medium-5 medium-cell-block-y">
+            <div class="news-postcard-stream-title">
+                <a href="home.html" class="back-btn">&larr; Back</a>
+                <button  data-open="exampleModal2" class="new-post-btn">Add Comment</button>
+                <h1 class="newsfeed-title">Discuss</h1>
+                <!-- This is the first modal -->
+                <div class="reveal" id="exampleModal2" data-reveal>
+                  <h1 class="news-modal-title">How would you like to contribute to this conversation?</h1>
+                  <!-- Toggle List -->
+                  <div class="row">
+                        <div class="columns">
+                          <ul class="dropdown menu" data-dropdown-menu>
+                            <li>
+                                <a href="#Item-1" id="category-selection">Category</a>
+                                <ul class="menu">
+                                    <li>
+                                        <a href="#Item-1A">Question</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Item-1B">Experience</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Item-1C">Thought</a>
+                                    </li>
+                                    <li>
+                                            <a href="#Item-1D">Rant</a>
+                                    </li>
+                                    <li>
+                                            <a href="#Item-1E">Data</a>
+                                    </li>
+                                    <li>
+                                            <a href="#Item-1F">Resource</a>
+                                    </li>
+                                    <li>
+                                            <a href="#Item-1G">Solution</a>
+                                    </li>
+                                    <li>
+                                            <a href="#Item-1H">Recommendation</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        </div>
+                      </div>
+                      <h1 class="news-modal-title">What do you have to say?</h1>   
+                  <textarea type="text" class="discussion-comment-entry medium-cell-block-y" placeholder="Discuss..."></textarea>
+                  <button class="new-post-btn" data-open="exampleModal3">Submit</button>
+                  <button class="close-button" data-close aria-label="Close reveal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+            </div>    
+        <!-- Newsfeed Postcard-->
+        <div id="postcard-1" class="news-postcard grid-y">
+            <div class="news-postcard-top cell grid-x">
+                <div class="profile-stamp">
+                    <img src="assets/img/stamp2.png" width="50px">
+                </div>
+                <div class="news-postcard-credentials grid-y">
+                    <p class="user-name">alyne344</p>
+                    <div class="news-story-date">3/3/18</div>
+                </div>
+            </div>
+            <div class="news-postcard-body cell grid-y">
+                <div class="news-postcard-title grid-y">
+                    <div class="news-story-title expand">The Worst Report EVER</div>
+                </div>
+                <div class="news-postcard-blurb expand">I am writing about a really misguided, angry opinion...</div>
+        
+            </div>
+            <div class="news-postcard-popularity">
+                <div class="news-postcard-inspire">
+                    <img class="inspire-btn" src="assets/img/light-bulb-icon.png" width="30px ">
+                    <div id="insire-btn-counter">1</div>
+                </div>
+                <a href="discussion.html">
+                    <img class="brain-btn" src="assets/img/brain-icon.png" width="30px">
+                </a>
+            </div>
+            <div class="news-postcard-footer">
+                <div class="news-postcard-hashtags">#News</div>
+            </div>
+        </div>
+        <!-- Discussion Section -->
+                <div class = "discussion-section">
+                    <div class="discussion-title">Discussion</div>
+                        <div class="filter grid-x">
+                            <p class="filter-text cell medium-3 small-3"><i class="fas fa-filter"></i>Filter by:</p>
+                            <div class="row cell medium-3 small-3">
+                                    <div class="columns">
+                                      <ul class="dropdown menu" data-dropdown-menu>
+                                        <li>
+                                            <a href="#Item-1" id="category-filter">Category</a>
+                                            <ul class="menu">
+                                                <li>
+                                                    <a href="#Item-1A">Question</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#Item-1B">Experience</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#Item-1C">Thought</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#Item-1D">Rant</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#Item-1E">Data</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#Item-1F">Resource</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#Item-1G">Solution</a>
+                                                </li>
+                                                <li>
+                                                        <a href="#Item-1H">Recommendation</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    </div>
+                                  </div>
+                        </div>
+                        <div id = "comment-1" class="discussion-comment grid-y">
+                            <div class="news-postcard-top cell grid-x">
+                                <div class="profile-stamp-comment">
+                                    <img src="assets/img/stamp.png">
+                                    <div class="news-story-date">3/3/18</div>
+                                </div>
+                                <div class="news-postcard-credentials grid-y">
+                                    <p class="user-name discuss">luribesdf</p>
+                                </div>
+                                <div>
+                                    <p class="comment-category">Question</p>
+                                </div>
+                            </div>
+                            <div class="news-postcard-body cell grid-y">
+                                <div class="discussion-comment-body expand">Hey Amy, where did you get that fact?</div>
+                            </div>
+                            <div class="news-postcard-popularity">
+                                <div class="news-postcard-inspire">
+                                    <img class="brain-btn" src="assets/img/brain-icon.png" width="30px">
+                                    <div id="brain-btn-counter">2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "comment-2" class="discussion-comment grid-y">
+                            <div class="news-postcard-top cell grid-x">
+                                <div class="profile-stamp-comment">
+                                    <img src="assets/img/stamp2.png">
+                                    <div class="news-story-date">3/3/18</div>
+                                </div>
+                                <div class="news-postcard-credentials grid-y">
+                                    <p class="user-name discuss">mjcowan</p>
+                                </div>
+                                <div>
+                                    <p class="comment-category">Data</p>
+                                </div>
+                            </div>
+                            <div class="news-postcard-body cell grid-y">
+                                <div class="discussion-comment-body expand">I think you are cherry picking your facts. I actually found this quote from A Really Good Resource, “Smart, evidence-based quote”.</div>
+                            </div>
+                            <div class="news-postcard-popularity">
+                                <div class="news-postcard-inspire">
+                                    <img class="brain-btn" src="assets/img/brain-icon.png" width="30px">
+                                    <div id="brain-btn-counter">5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "comment-2" class="discussion-comment grid-y">
+                            <div class="news-postcard-top cell grid-x">
+                                <div class="profile-stamp-comment">
+                                    <img src="assets/img/stamp2.png">
+                                    <div class="news-story-date">3/3/18</div>
+                                </div>
+                                <div class="news-postcard-credentials grid-y">
+                                    <p class="user-name discuss">erik_mcdaniel</p>
+                                </div>
+                                <div>
+                                    <p class="comment-category">Idea</p>
+                                </div>
+                            </div>
+                            <div class="news-postcard-body cell grid-y">
+                                <div class="discussion-comment-body expand">Here is another idea about this issue.</div>
+                            </div>
+                            <div class="news-postcard-popularity">
+                                <div class="news-postcard-inspire">
+                                    <img class="brain-btn" src="assets/img/brain-icon.png" width="30px">
+                                    <div id="brain-btn-counter">3</div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                </div>
+            </div>
+
+
+                   
+    <!-- Newsfeed Story-->
+    <div class="news-story-feed cell grid-margin-x large-4 medium-5 medium-cell-block-y medium-cell-block-x">
+            <div class="news-story-title-right">The Worst Report EVER</div>
+            <p class="user-name medium-1 small-1">alyne344</p>
+             <p class="story-content">I am writing about a really misguided, 
+                angry opinion that I just now came up with 
+                after reading a post on Facebook. Here is a 
+                quote stating a completely incorrect fact, 
+                “blah blah blah blah blah blah blah blah”. 
+                I never validated the fact, but I know it is 
+                true because it validates my newfound opinion. 
+                I have never seen this issue firsthand, but the whole 
+                idea of it makes me angry so it must be true. 
+                Someone needs to do something about this issue. 
+                Can you imagine what it would do to our children? 
+                How dare they do such terrible things to us! 
+                What are your thoughts on this issue? Has anyone 
+                experienced this problem?</p>
+    </div>
+    </div>
+    </div>
+        
+   
+  <!-- JavaScript -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx7lhZ9k6uXTmOw9SZupJMzEtdVCv7cxU&callback=initMap"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="./assets/javascript/app.js"></script>
+  <script>
+      $(document).foundation();
+      $(".news-postcard").click(function(){
+          $(".news-story-title").toggleClass("news-postcard-title-toggle");
+          $(".news-postcard").toggleClass("news-postcard-toggle");
+          $(".profile-stamp").toggleClass("profile-stamp-toggle");
+          $(".news-postcard-blurb").toggleClass("news-postcard-blurb-toggle");
+      }); 
+
+      $(".inspire-btn").click(function(){
+        $('div.news-postcard').click(function(e){
+             e.stopPropagation();
+        });
+          $(".inspire-btn").toggleClass("inspire-btn-toggle");
+          
+      }) 
+
+      $(".brain-btn").click(function(){
+          $(".brain-btn").toggleClass("brain-btn-toggle");
+      }) 
+  </script>
+
+</body>
+</html>

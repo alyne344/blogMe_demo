@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><img class="inspire-btn" src="assets/img/light-bulb-icon.png" width="30px ">Postcard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">  
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cookie|Merienda+One|Montserrat|Permanent+Marker|Vidaloka" rel="stylesheet">
+</head>
+
+<body class="background-color">
+    <!--Nav Bar -->
+  <div class="nav-container">
+        <!-- Nav medium+ -->
+        <div class="top-bar navbar" id="nav-main">
+          <div class="top-bar-left">
+            <img class="blog-logo" src="assets/img/blogme-logo.png" width="100px"> 
+          </div>
+          <div class="top-bar-right">
+               <button id="sign-out-btn" type="submit">Sign Out</button>   
+          </div>
+        </div>
+      </div>
+      <!--Buttons -->
+  <section class="hashtag-topic-section">
+      <div class="hashtag-topics tag-cloud">
+          <input type="search" placeholder="Search a topic" class="search-entry-box cell medium-11">
+          <button type="submit" class="search-btn cell medium-1">Search</button>
+          <a class="tag-cloud-individual-tag" href="#">#Politics</a>
+          <a class="tag-cloud-individual-tag" href="#">#News</a>
+          <a class="tag-cloud-individual-tag" href="#">#Sports</a>
+          <a class="tag-cloud-individual-tag" href="#">#Lifestyle</a>
+          <a class="tag-cloud-individual-tag" href="#">#Motivation</a>
+          <a class="tag-cloud-individual-tag" href="#">#People</a>
+          <a class="tag-cloud-individual-tag" href="#">#DailyRant</a>
+          <a class="tag-cloud-individual-tag" href="#">#LoveLife</a>
+          <a class="tag-cloud-individual-tag" href="#">#Science</a>
+      </div>
+    </section>
+    <!-- Banner -->
+        <div class="orbit banner grid-x" role="region" aria-label="Favorite Space Pictures" data-orbit>
+            <div class="orbit-wrapper cell large-12 medium-12 small-12">
+                        <img class="orbit-image" src="assets/img/banner.png" alt="Space">
+             </div>    
+        </div>
+
+  <!-- Newsfeed -->
+<div class="cell medium-auto">
+    <div class="grid-x grid-padding-x">
+        <!-- Newsfeed stream-->
+        <div class="news-postcard-stream cell large-4 large-offset-2 medium-5 medium-cell-block-y">
+            <div class="news-postcard-stream-title">
+                <button data-open="exampleModal2" class="new-post-btn">New Post</button>
+                <h1 class="newsfeed-title">Newsfeed</h1>
+                <!-- This is the first modal -->
+                <div class="reveal" id="exampleModal2" data-reveal>
+                    <h1 class="news-modal-title">Tell us your story...</h1>
+                    <input type="text" class="news-modal-story" placeholder="Title Holder">
+                    <textarea type="text" class="news-story-content medium-cell-block-y" placeholder="Story Content"></textarea>
+                    <input type="text" placeholder="Add Hashtags">
+                    <button class="new-post-btn" data-open="exampleModal3">Submit</button>
+                    <button class="close-button" data-close aria-label="Close reveal" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+            </div>
+            <!-- Newsfeed Postcard-->
+            <div id="postcard-1" class="news-postcard grid-y">
+                <div class="news-postcard-top cell grid-x">
+                    <div class="profile-stamp-1 profile-stamp">
+                        <img src="assets/img/stamp2.png" width="50px">
+                    </div>
+                    <div class="news-postcard-credentials grid-y">
+                        <p class="user-name">alyne344</p>
+                        <div class="news-story-date">3/3/18</div>
+                    </div>
+                </div>
+                <div class="news-postcard-body cell grid-y">
+                    <div class="news-postcard-title grid-y">
+                        <div class="news-story-title-1 news-story-title expand">The Worst Report EVER</div>
+                    </div>
+                    <div class="news-postcard-blurb-1 news-postcard-blurb expand">I am writing about a really misguided, angry opinion...</div>
+
+                </div>
+                <div class="news-postcard-popularity">
+                    <div class="news-postcard-inspire">
+                        <img class="inspire-btn inspire-btn-1" src="assets/img/light-bulb-icon.png" width="30px ">
+                        <div id="insire-btn-counter">1</div>
+                    </div>
+                    <a href="discussion.html"><img class="brain-btn" src="assets/img/brain-icon.png" width="30px"></a>
+                </div>
+                <div class="news-postcard-footer">
+                    <div class="news-postcard-hashtags">#News</div>
+                </div>
+            </div>
+
+            <div id="postcard-2" class="news-postcard grid-y">
+                <div class="news-postcard-top cell grid-x">
+                    <div class="profile-stamp profile-stamp-2">
+                        <img src="assets/img/stamp2.png" width="50px">
+                    </div>
+                    <div class="news-postcard-credentials grid-y">
+                        <p class="user-name">alyne344</p>
+                        <div class="news-story-date">3/3/18</div>
+                    </div>
+                </div>
+                <div class="news-postcard-body cell grid-y">
+                    <div class="news-postcard-title grid-y">
+                        <div class="news-story-title news-story-title-2 expand">A Poem about Life</div>
+                    </div>
+                    <div class="news-postcard-blurb news-postcard-blurb-2 expand">This is a poem about life...</div>
+
+                </div>
+                <div class="news-postcard-popularity">
+                    <div class="news-postcard-inspire">
+                        <img class="inspire-btn" src="assets/img/light-bulb-icon.png" width="30px ">
+                        <div id="insire-btn-counter">1</div>
+                    </div>
+                    <img class="brain-btn" src="assets/img/brain-icon.png" width="30px">
+                </div>
+                <div class="news-postcard-footer">
+                    <div class="news-postcard-hashtags">#LifeStyle</div>
+                </div>
+            </div>
+        </div>
+    <!-- Newsfeed Story-->
+    <div class="news-story-feed cell grid-margin-x large-4 medium-5 medium-cell-block-y medium-cell-block-x">
+            <div id="story-1" class="news-story-title-right">The Worst Report EVER</div>
+            <p class="user-name medium-1 small-1">alyne344</p>
+             <p class="story-content">I am writing about a really misguided, 
+                angry opinion that I just now came up with 
+                after reading a post on Facebook. Here is a 
+                quote stating a completely incorrect fact, 
+                “blah blah blah blah blah blah blah blah”. 
+                I never validated the fact, but I know it is 
+                true because it validates my newfound opinion. 
+                I have never seen this issue firsthand, but the whole 
+                idea of it makes me angry so it must be true. 
+                Someone needs to do something about this issue. 
+                Can you imagine what it would do to our children? 
+                How dare they do such terrible things to us! 
+                What are your thoughts on this issue? Has anyone 
+                experienced this problem?</p>
+          </div>
+    </div>
+    </div>
+        
+   
+  <!-- JavaScript -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDx7lhZ9k6uXTmOw9SZupJMzEtdVCv7cxU&callback=initMap"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+  <script src="./assets/javascript/app.js"></script>
+  <script>
+      $(document).foundation();
+      $("#postcard-1").click(function(){
+          $(".news-story-title-1").toggleClass("news-postcard-title-toggle");
+          $(".news-postcard-1").toggleClass("news-postcard-toggle");
+          $(".profile-stamp-1").toggleClass("profile-stamp-toggle");
+          $(".news-postcard-blurb-1").toggleClass("news-postcard-blurb-toggle");
+      }); 
+
+      $(".inspire-btn").click(function(){
+        $('div.news-postcard').click(function(e){
+             e.stopPropagation();
+        });
+          $(".inspire-btn-1").toggleClass("inspire-btn-toggle");
+          
+      }) 
+
+      $(".brain-btn").click(function(){
+          $(".brain-btn").toggleClass("brain-btn-toggle");
+      }) 
+
+      $("#postcard-2").click(function(){
+          $(".news-story-title-2").toggleClass("news-postcard-title-toggle");
+          $(".news-postcard-2").toggleClass("news-postcard-toggle");
+          $(".profile-stamp-2").toggleClass("profile-stamp-toggle");
+          $(".news-postcard-blurb-2").toggleClass("news-postcard-blurb-toggle");
+      }); 
+
+      $(".inspire-btn").click(function(){
+        $('div.news-postcard').click(function(e){
+             e.stopPropagation();
+        });
+          $(".inspire-btn-2").toggleClass("inspire-btn-toggle");
+          
+      }) 
+
+      $(".brain-btn").click(function(){
+          $(".brain-btn").toggleClass("brain-btn-toggle");
+      }) 
+  </script>
+
+</body>
+</html>
